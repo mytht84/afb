@@ -43,13 +43,6 @@ main, footer, header, menu, nav, section, article {display: block}
 }
 
 @font-face {
-   font-family: 'OedipaReg';
-   src: url('Oedipa.ttf') format('truetype');
-   font-weight: normal;
-   font-style: normal;
-}
-
-@font-face {
    font-family: 'EgoReg';
    src: url('EGOTRIP.ttf') format('truetype');
    font-weight: normal;
