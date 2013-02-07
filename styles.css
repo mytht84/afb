@@ -1,0 +1,489 @@
+/* 
+    Document   : styles
+    Created on : 04.jan.2013, 14:45:40
+    Author     : My
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+ol, ul {
+	list-style: none;
+}
+
+
+
+main, footer, header, menu, nav, section, article {display: block}
+
+/************************ Basics ************************/
+ body {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	background-color: #cccccc;
+	margin: 0 auto;
+        width: 100%; 
+	line-height: 1.5;
+}
+
+
+
+/*forskjellige type fonter*/
+
+@font-face {
+   font-family: 'IthornetReg';
+   src: url('Ithornet.ttf') format('truetype');
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'OedipaReg';
+   src: url('Oedipa.ttf') format('truetype');
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'EgoReg';
+   src: url('EGOTRIP.ttf') format('truetype');
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'PiReg';
+   src: url('PIJAMAS.ttf') format('truetype');
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'ScribbleReg';
+   src: url('scribble.ttf') format('truetype');
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'BoycottRegular2';
+   src: url('BOYCOTT_-webfont.ttf') format('truetype');
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'KidReg';
+   src: url('scribble.ttf') format('truetype');
+   font-weight: normal;
+   font-style: normal;
+   
+}
+
+h1.fontface {
+   font: 57px/68px 'KidReg', Arial, sans-serif;
+   text-transform:uppercase;
+   letter-spacing: 0;
+}
+
+h2.fontface {
+   font: 34px/52px 'KidReg', Arial, sans-serif;
+   letter-spacing: 0;
+   
+ 
+}
+
+/*
+a, p a {
+	text-decoration: none;
+	color: #333;
+}
+a:hover { color: #191919; }*/
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    position: relative;
+}
+
+h1 {
+	font-size: 45px;
+	line-height: 0.9;
+	color: #191919;
+	text-align: left;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+
+h2 {
+	font-size: 28px;
+	line-height: 1.3;
+	color: #191919;
+	text-transform: none;
+	margin-top: 7px;
+	padding-bottom: 6px;
+}
+
+h3 {
+	font-size: 23px;
+	line-height: 0.9;
+	color: #191919;
+	text-align: left;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+
+
+h3 span {
+	font-size: 12px;
+	line-height: 1.4;
+	color: #ffffff;
+	display: block;
+	margin-top: 10px;
+	text-transform: none;
+}
+
+h4 {
+	font-size: 23px;
+	line-height: 0.9;
+	color: #ffffff;
+	text-align: left;
+	margin-bottom: 12px;
+	padding-bottom: 10px;
+}
+
+h4 span {
+	font-size: 12px;
+	line-height: 1.4;
+	color: white;
+	display: block;
+	margin-top: 10px;
+	text-transform: none;
+}
+
+header {
+	position: relative;
+	background: #191919 ;
+	width: 100%;
+	height: 100px;
+	display: block;
+}
+
+
+
+div.bottom  { 
+   position: absolute;
+   left: 0;
+   bottom: 0px;
+   height: 3px;
+   width: 100%;
+	background: #00aeff; /* Old browsers */
+   background: -moz-linear-gradient(left, #00aeff 1%, #71fc00 15%, #ffff00 30%, #fc7a00 50%, #cc00a6 70%, #ff0084 85%, #ff0000 100%); /* FF3.6+ */
+   background: -webkit-gradient(linear, left top, right top, color-stop(1%,#00aeff), color-stop(15%,#71fc00), color-stop(30%,#ffff00), color-stop(50%,#fc7a00), color-stop(70%,#cc00a6), color-stop(85%,#ff0084), color-stop(100%,#ff0000)); /* Chrome,Safari4+ */
+   background: -webkit-linear-gradient(left, #00aeff 1%,#71fc00 15%,#ffff00 30%,#fc7a00 50%,#cc00a6 70%,#ff0084 85%,#ff0000 100%); /* Chrome10+,Safari5.1+ */
+   background: -o-linear-gradient(left, #00aeff 1%,#71fc00 15%,#ffff00 30%,#fc7a00 50%,#cc00a6 70%,#ff0084 85%,#ff0000 100%); /* Opera 11.10+ */
+   background: -ms-linear-gradient(left, #00aeff 1%,#71fc00 15%,#ffff00 30%,#fc7a00 50%,#cc00a6 70%,#ff0084 85%,#ff0000 100%); /* IE10+ */
+   background: linear-gradient(left, #00aeff 1%,#71fc00 15%,#ffff00 30%,#fc7a00 50%,#cc00a6 70%,#ff0084 85%,#ff0000 100%); /* W3C */
+
+}
+
+
+main{
+    	height: 600px;
+	/*clear: both;*/
+	width: 70%;
+	margin: 0 auto;
+	background-color: #000000;
+        box-shadow: 1px 1px 3px 1px; /*top, h�yre, bottom ,venstre*/
+    
+}
+
+
+
+
+
+/******FOOTER******/
+
+footer {
+        height: 100px;
+	/*clear: both;*/
+	width: 70.5%;
+	margin: 0 auto;
+	background-color: #191919;
+        box-shadow: 1px 1px 3px 1px; /*top, h�yre, bottom ,venstre*/
+}
+
+footer p {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+
+
+/************************ Containers ************************/
+
+
+#container {
+	position: relative;
+	width: 1000px;
+	margin: 0 auto;
+	background-color: transparent;
+	min-height: 100%;
+}
+
+.container1 {
+   width: 990px;
+   margin: 0 auto;
+	padding-top: 10px;
+	position: relative;
+}
+
+.content1 {
+	position: relative;
+	float: left;
+	width: 900px;
+	margin-top: -10px;
+	margin-bottom: 16px;
+	margin-left: 26px;
+	background: #333;
+	border-top: 3px solid #fff;
+}
+
+
+
+#content {
+
+	width: 67%; 
+        height: 600px;
+        /*margin: 0 auto;*/
+        margin:1% 0 0 15%; 
+	padding: 1% 1.5% 1% 1.5%;
+	background-color: #ffffff; 
+        
+}
+
+
+
+
+/************************ Navigation Menu ************************/
+nav {
+	position: relative;
+        width: 100%;
+	margin: 0 auto;
+        padding-top: 10px;
+
+}
+
+nav ul li {
+	float: left;
+	line-height: normal;
+	margin-left: 45px;
+}
+
+nav ul li a{
+	font-size: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+	color:#ffffff;
+	text-transform:capitalize; /*stor bokstav p� det f�rste ordet*/
+	font-weight:normal;
+	display:block;	/* IE6, IE7 line height fix */
+	text-decoration:none;
+	margin-top:3px;
+	padding:5px; 
+}
+
+
+nav ul li a.grn:hover{
+	color:#9acd32;
+        text-decoration:underline;
+}
+
+nav ul li a.orng:hover{
+	color:#ff6600;
+        text-decoration:underline;
+}
+nav ul li a.pnk:hover{
+	color:#FF3399;
+        text-decoration:underline;
+}
+
+nav ul li a.blu:hover{
+	color:#00d0ff;
+        text-decoration:underline;
+}
+
+nav ul li a.purpl:hover{
+	color:#CC00FF;
+        text-decoration:underline;
+}
+
+/*farger p� bokstaver og etc*/
+
+.white { color: #ffffff; }
+
+.green {color: #9acd32; }
+
+.orange { color: #FF6600; }
+
+.blue { color: #00d0ff; }
+
+.purple {color: #cc00ff; }
+
+.black {color: #000000; }
+
+.large {font-size: 72px; }
+
+.medium {font-size: 50px; }
+
+.small {font-size: 25px; }
+
+.rotate {
+   -webkit-transform: rotate(-90deg);
+   -moz-transform: rotate(-90deg); display: block; /*f.eks rotere tekst*/
+}
+
+.clearing {
+	clear: both;
+	display: inline;
+	width: 100%;
+	height: 0;
+	overflow: hidden;
+}
+
+/************************ Specifics ************************/
+
+
+ #title {
+    float: left;
+	width: 260px;
+	height: 100px;
+}
+
+
+
+
+/* artikler */
+
+/*
+.articlecontent {
+    width: 90%;
+    height: 85%;
+
+    background-color: #ffffff;
+}*/
+
+/************************ Article ************************/
+/*.articlecontent header p {
+	font-size: 14px;
+	font-style: italic;
+	color: #000000;
+	}
+*/
+
+
+
+
+
+
+
+
+.articlecontent h2 {
+	color: #000000;
+	}
+
+.articlecontent h2 a.nohover {
+
+     text-decoration: none;
+
+     color: #000000; /* hvilken som helst farge, s� lenge det passser til bakgrunnen */
+
+}
+
+.articlecontent p {
+	color: #000000;
+	}
+	
+.articlecontent h3 {
+	text-decoration: underline;
+       
+	}
+	
+
+.articlecontent h3 a {
+	color: #241303;
+	
+	}
+
+.articlecontent h3 a:hover {
+	color: #cc0000;
+	font-weight: bold;
+	}
+
+.articlecontent a {
+	color:#000000;
+	}
+
+.articlecontent a:hover {
+	color:#006633;
+	}
+
+.articlecontent dl dd a:hover {
+	color: #cc0000;
+	}
+
+.articlecontent h3 a name:nohover {
+	color:transparent;
+	}
+	
+.articlecontent ul li a {
+	color: #600000;
+	font-weight: bold;
+	}
+	
+.articlecontent p a:hover {
+	color: #006600; 
+        font-weight: bold;
+	}
+	
+.articlecontent hr {
+	width: 100%;
+	color: white;
+	}
+	
+.articlecontent ul li a:hover {
+	color: white;
+}
+
+/*content{
+	position: relative;
+	margin-top: 50%;
+	float: left; 
+	width: 70%; 
+	margin:1% 0.5% 1% 0; 
+	padding: 1% 1.5% 1% 1.5%; top, h�yre, bottom ,venstre
+	background-color: #000000;
+}
+*/
+
+/*#content {
+   float: left;
+   width: 400px;
+   margin-left: 40px;
+}
+*/
+.gallery a {
+	text-decoration: none;
+}
+
+img {
+	border: none;
+}
+
+
+
+/* sidebar and footer widget blocks */
